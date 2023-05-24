@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace  ;
+    font-weight: bold;
+    background: linear-gradient(35deg,#053750 5%,#366396 ,#3a85aa 80%) fixed;
+}
+/*Header Styles*/
+header{
+    background-color: #01163d;
+    height: 2em;
+    width: 100%;
+    position: fixed;
+    border-bottom: 1px solid #EEEEEE;
+    padding-left: 30px;
+    justify-content: space-between;
+}  
+
+#lang{
+    margin-right: 60px;
+    width: 70px;
+}
+
+.logo_blue{
+    width: 150px;
+}
+/*End of Header Styles*/
+
+/*Navigation and Profile Styles*/
+.profile img{
+    width: 90px;
+    border-radius: 50px;
+    margin-bottom: 20px;
+}
+.profile p{
+    color: #969393;
+    text-align: center;
+}
+.profile p:last-of-type{
+    color: goldenrod;    
+}
+
+.nav_icon{
+    color: purple;
+    font-size: 10px;
+    width: 24px;
+    height: 24px;
+    margin-left: 20%;
+    margin-right: 5px;
+    transform: translateY(-2px);
+}
+.navigation{
+    height: 96.5%;
+    width: 16%;
+    position: fixed;
+    margin-top: 15px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    background-color: #01163d;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border-right: 1px solid #eee;
+}
+.nav{
+    height: 100%;   
+}
+nav{
+    height: 97%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    justify-content: space-between;
+}
+nav a {
+    color: #eee;
+    letter-spacing: 1px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    font-size: 16px;
+}
+nav a:hover{
+    background-color: #007396;
+    font-size: 18px;
+}
+nav a:hover .nav_icon{
+    width: 26px;
+    height: 26px;
+    margin-left: 23%;
+}
+.profile{
+    padding: 2.5% 0 2.5% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    width: 100%;
+}
+.menu_icon{
+    top: 4px;
+    left: 4px;
+    width: 24px;
+    height: 24px;
+    display: none;
+    position: fixed;
+}
+/*End of Navigation and Profile Styles*/
+
+/*General Styles in Main Content*/
+.main-content{
+    color:  rgb(32, 32, 32);
+    width: 80%;
+    height: 100%;
+    float: right;
+    margin: 40px 25px 6px 0;
+    border-radius: 10px;
+    background-color: #e6e3e381;
+    padding: 20px 30px 20px 30px;
+    box-sizing: border-box; 
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+hr{
+    width: 100%;
+    border: 1px solid #eee;
+    margin: 10px auto 10px auto;
+}
+
+footer{
+    text-align: center;
+}
+
+.subtitle{
+    font-size: 40px;
+    color:  #d6cdcd;
+    margin: 0;
+}
+
+.help
+{
+    width: 70%;
+    margin: 0 auto;
+    color: #7f7d81;
+    background-color: #eeeeeeb9;  
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+}
+.contents,.contents_title{
+    text-align: justify;
+}
+.help_title{
+    color: #dd2e02;
+    text-align: center;
+    margin-top: 5px;
+}
+.reminder{
+    text-align: center;
+    margin-top: 5px ;
+}
+.getting_started{
+    color: #0a580a;
+    margin-top: 60px;
+}
+.content_title{
+    margin-top: 20px;
+    text-decoration: underline;
+    color: #053750;
+}
+@media screen and (max-width:1200px) {
+    nav span{
+        display: none;
+    }
+    .nav_icon{
+        margin: 0 auto;
+    }
+    nav a:hover .nav_icon{
+        width: 26px;
+        height: 26px;
+        margin: 0 auto;
+    }
+    .navigation{
+        width: 14%;
+    }
+    .main-content{
+        width: 82%;
+    }
+}
+@media screen and (max-width:1000px) {
+    .logo_blue{
+        margin-left: 20px;
+    }
+    .main-content{
+        width: 100%;
+        margin: 40px 0 0 0;
+    }
+    #sidebar:checked ~ .navigation{
+        display: block;
+    }
+    nav span{
+        display: block;
+    }
+    .nav_icon{
+        margin-left: 20%;
+        margin-right: 5px;
+    }
+    nav{
+        justify-content: unset;
+    }
+    .menu_icon{
+        display: block;
+    }
+    nav a:hover .nav_icon{
+        margin: 0 0 0 23%;
+    }
+    .navigation{
+        height: 100vh;
+        display: none;
+        width: 30%;
+    }
+}
+@media screen and (max-width:800px){
+    .navigation{
+        width: 35%;
+    }
+}
+@media screen and (max-width:600px) {
+    .navigation{
+        width: 40%;
+    }
+}   
+@media screen and (max-width:500px) {
+    .quote{
+        font-size: 20px;
+    }
+    nav span{
+        font-size: 12px;
+    }
+    .navigation{
+        width: 50%;
+    }
+}
+
+

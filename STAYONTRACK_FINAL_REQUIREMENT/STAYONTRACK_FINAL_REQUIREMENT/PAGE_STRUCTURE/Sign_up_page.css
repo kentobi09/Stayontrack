@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Courier New', Courier, monospace  ;
+    font-weight: bold;
+    background: linear-gradient(35deg,#053750 5%,#366396 ,#3a85aa 80%) fixed;
+}
+
+p{
+    text-align: center;
+    color: #eee;
+    font-size: 12px;
+}
+
+form{
+    width: 45%; 
+    padding: 10px 20px ;
+    background-color: #08213aab;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.subtitle_area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+    width: 70%;
+    height: 100vh;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+fieldset{
+    padding: 10px 20px;
+    border: none;
+}
+
+aside{
+    width: 30%;
+    height: 100%;
+    background-color: rgb(44, 42, 42);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border-right: 7px solid grey;
+}
+.display{
+    width: 132.2px;
+}
+header{
+    display: none;
+}
+label, input{
+    display: block;
+    width: 100%;
+    margin: 0 auto 14px auto;
+    min-height: 3em;
+    border: none;
+    border-radius: 10px;
+    color: #EEEEEE;
+    font-size: 14px;
+}
+label{
+    font-size: 16px;
+}
+input{
+    background-color: #172d42;
+    padding: 2px 10px;
+    box-sizing: border-box;
+    margin-top: 4px;
+}
+#login{
+    text-align: center;
+    margin: 10px auto;
+    width: 50%;
+    padding: 2px 10px;
+    border-radius: 10px ;
+    color: rgb(143, 139, 139);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#login:hover{
+    background-color: rgb(143, 139, 139);
+    color: #eee;
+}
+#button{
+    margin: 20px auto 0 auto;
+    width: 7rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    color: #eee;
+    background-color: #3a85aa;
+}
+#button:hover{
+    background-color: #2c6a8a;
+}
+hr{
+    margin: 0 0 15px 0;
+}
+.forgot{
+    display: flex;
+    justify-content: flex-end;
+}
+a{
+    text-decoration: none;
+    color: #3a85aa;
+}
+img{
+    width: 200px;
+    margin-top: 20px;
+}
+h3{
+    text-align: center;
+    color: #eee;
+    margin: 10px 0;
+}
+.logo{
+    width: 80%;
+    height: 8%;
+}
+.socmed_icon{
+    width: 30px;
+    transform: translateY(-10px) translateX(-5px);
+}
+
+@media screen and (max-width: 1600px){
+    .form{
+        height: 100%;    
+        padding: 20px 0;
+    } 
+    form{
+        width: 60%;
+    }
+ }
+
+@media screen and (max-width: 1300px){
+   form{
+    width: 70%;
+   }
+   #login  {
+    width: 70%;
+}
+}
+@media screen and (max-width: 1000px){
+    aside{
+        display: none;
+    }
+    .form{
+        width: 100%;
+        display: fixed;
+    }
+    header{
+        background-color: #01163d;
+        height: 2em;
+        width: 100%;
+        position: fixed;
+        border-bottom: 1px solid #EEEEEE;
+        padding-left: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }  
+    #lang{
+        margin-right: 60px;
+        width: 70px;
+    }
+    .flex{
+        display: flex;
+    }
+    .logo_blue{
+        width: 150px;
+        margin-bottom: 20px;
+    }
+    #login  {
+        width: 90%;
+    }
+ }
+@media screen and (max-width: 500px){
+    aside{
+     display: none;
+    }
+    form{
+     width: 90%;
+    }
+
+ }
+
