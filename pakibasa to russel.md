@@ -10,5 +10,6 @@ A backend for website named stayontrack, its function is to track expenses.
 - settings?
 - language?
 - pie chart?
+- create admin page that tracks users?
 
 Do we create seperate table per account or mix datas in one table and access it by primary key
